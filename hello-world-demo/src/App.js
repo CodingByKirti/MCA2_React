@@ -5,10 +5,10 @@ import Two from "./Two";
 
 function App() {
   return (
-    <>
+    <div>
       <One />
       <Two />
-    </>
+    </div>
   );
 }
 
