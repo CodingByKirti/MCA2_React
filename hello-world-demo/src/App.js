@@ -12,11 +12,17 @@ import { DateProg } from "./DateProg";
 import { HookTest } from "./HookTest";
 import ParentComponent from "./FunAsPropsDemo/ParentComponent";
 import Parent from "./FunAsPropsDemo/Parent";
+import BootstrapTest from "./BootstrapTest";
+import BSDemo from "./BSDemo";
+import FormsDemo from "./FormsDemo";
 
 function App() {
   return (
     <div>
-      <Parent />
+      <FormsDemo />
+      {/* <BSDemo /> */}
+      {/* <BootstrapTest /> */}
+      {/* <Parent /> */}
       {/* <ParentComponent /> */}
       {/* <Welcome fname="Abhay" lname="Sharma" />
       <ClassComp abc="testing" />
