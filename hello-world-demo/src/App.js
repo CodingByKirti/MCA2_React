@@ -15,11 +15,13 @@ import Parent from "./FunAsPropsDemo/Parent";
 import BootstrapTest from "./BootstrapTest";
 import BSDemo from "./BSDemo";
 import FormsDemo from "./FormsDemo";
+import SecondForm from "./SecondForm";
 
 function App() {
   return (
     <div>
-      <FormsDemo />
+      <SecondForm />
+      {/* <FormsDemo /> */}
       {/* <BSDemo /> */}
       {/* <BootstrapTest /> */}
       {/* <Parent /> */}
