@@ -16,11 +16,30 @@ import BootstrapTest from "./BootstrapTest";
 import BSDemo from "./BSDemo";
 import FormsDemo from "./FormsDemo";
 import SecondForm from "./SecondForm";
+import UnControlledForm from "./UnControlledForm";
+import { UncontrolledRefHook } from "./UncontrolledRefHook";
+import { Simple } from "./HOCDemo/Simple";
+import { HOC } from "./HOCDemo/HOC";
+import RawComp from "./HOCDemo/RawComp";
+import Laptop from "./HOCDemo/Laptop";
+import LCMethods from "./LifeCycleMethods/LCMethods";
+import { UseEffectHook } from "./LifeCycleMethods/UseEffectHook";
+import { UseIsomorphicFetch } from "./UseIsomorphicFetch";
 
 function App() {
   return (
     <div>
-      <SecondForm />
+      <UseIsomorphicFetch />
+      {/* <UseEffectHook /> */}
+      {/* <LCMethods /> */}
+      {/* <RawComp color="MagenticBlue" /> */}
+      <hr />
+      {/* <Laptop size="14 inch" color="black" /> */}
+      {/* <Simple /> */}
+      {/* <HOC comp={Simple} /> */}
+      {/* <UncontrolledRefHook /> */}
+      {/* <UnControlledForm /> */}
+      {/* <SecondForm /> */}
       {/* <FormsDemo /> */}
       {/* <BSDemo /> */}
       {/* <BootstrapTest /> */}
