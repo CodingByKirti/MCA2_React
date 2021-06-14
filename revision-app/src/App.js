@@ -3,15 +3,17 @@ import "./App.css";
 import { FunComp } from "./pages/FunComp";
 import ClassComp from "./pages/ClassComp";
 import Likes from "./pages/Likes";
+import Parent from "./Parent";
 
 function App() {
   return (
     <div className="App">
-      <FunComp name="Smita"> Hello Dear </FunComp>
+      <Parent />
+      {/* <FunComp name="Smita"> Hello Dear </FunComp>
       <ClassComp name="Amay" />
       <hr />
       <hr />
-      <Likes />
+      <Likes /> */}
     </div>
   );
 }

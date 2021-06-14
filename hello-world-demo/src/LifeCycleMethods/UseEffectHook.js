@@ -9,6 +9,11 @@ export const UseEffectHook = () => {
   useEffect(() => alert("hello button is clicked"), [inc]); // gets called everytime when inc comp
   // gets  rendered
 
+    // useEffect(what is to be executed ,when to execute)
+    //           (fun())  // everytime .. render/ update
+    //           (fun(),[]) // only one time , initial render
+    //           (fun(),[inc,value,counter])
+
   return (
     <div>
       <button onClick={() => setInc(inc + 1)}>Click me {inc}</button> <hr />

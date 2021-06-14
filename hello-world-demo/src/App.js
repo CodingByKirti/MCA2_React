@@ -25,11 +25,21 @@ import Laptop from "./HOCDemo/Laptop";
 import LCMethods from "./LifeCycleMethods/LCMethods";
 import { UseEffectHook } from "./LifeCycleMethods/UseEffectHook";
 import { UseIsomorphicFetch } from "./UseIsomorphicFetch";
+import { decNum, incNum } from "./Actions/MyActions";
+import { useDispatch, useSelector } from "react-redux";
+import { IncDec } from "./Reducers/IncDec";
 
 function App() {
+  const state = useSelector((state) => state.IncDec);
+
+  const dispatch = useDispatch();
+
   return (
     <div>
-      <UseIsomorphicFetch />
+      <button onClick={() => dispatch(decNum())}>-</button>
+      <input type="text" value={state} size="1" />
+      <button onClick={() => dispatch(incNum())}>+</button>
+      {/* <UseIsomorphicFetch /> */}
       {/* <UseEffectHook /> */}
       {/* <LCMethods /> */}
       {/* <RawComp color="MagenticBlue" /> */}
