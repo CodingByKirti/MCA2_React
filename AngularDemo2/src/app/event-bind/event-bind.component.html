@@ -1,0 +1,22 @@
+<p>event-bind works!</p>
+
+<input type="text" (click)="show($event)">
+<hr>
+<hr>
+status : {{prodInfo}} <br>
+<button (click)="addProd($event)" value="Book">Book</button><br>
+<button (click)="addProd($event)" value="Pen">Pen</button><br>
+<button (click)="addProd($event)" value="Marker">Marker</button><br>
+<hr>
+<hr>
+<button (click)="showMessage()">Add Product to Cart</button>
+
+{{message}}
+<!-- template / local ref variable -->
+<hr>
+<hr>
+<div class="text-center">
+    <input type="text" placeholder="type your wish" #wish>
+    <button class="btn btn-success" (click)="processWish(wish)">When will it come true</button>
+    <h2 class="text-success"> {{wishMessage}}</h2>
+</div>

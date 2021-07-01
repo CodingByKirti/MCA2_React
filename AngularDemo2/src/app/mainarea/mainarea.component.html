@@ -1,0 +1,19 @@
+<p>mainarea works!</p>
+<h1> NAme is {{fname.toUpperCase()}}</h1>
+<h2>{{fun()}}</h2>
+<h2>{{12+90}}</h2>
+<h2 class="text-center text-danger">{{data ? 'Prime User':Hello}}</h2>
+<input type="text" placeholder="type here" value="{{lname}}" readonly="{{canRead}}">
+<br>
+<input type="text" placeholder="type here" value="{{lname}}" [readonly]="canRead">
+<input type="text" placeholder="type here" value="{{lname}}" bind-readonly="canRead">
+<div hidden="{{isHidden}}">
+    check property binding vs interpolation
+</div>
+<div [hidden]="isHidden">
+    check property binding vs interpolation : using Prop binding
+</div>
+
+<div bind-hidden="isHidden">
+    check property binding vs interpolation : using bind-propname
+</div>
