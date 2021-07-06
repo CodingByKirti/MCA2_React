@@ -1,4 +1,26 @@
 <p>event-bind works!</p>
+<hr>
+Type your firstname here <input type="text" [(ngModel)]="firstName">
+{{firstName}}
+<hr>
+<textarea [(ngModel)]="comments" id="" cols="30" rows="10"></textarea>
+{{comments | ellipses : 8}}
+<h1> {{uname | ellipses: 4}}</h1>
+<h1> {{uname | uppercase| slice: 2 :5}}</h1>
+<h1> {{uname | uppercase}}</h1>
+<h2> {{student.name | uppercase}}</h2>
+<h2> {{student.fee}}</h2>
+<h2> {{student.startDate}}</h2>
+<h2> {{student.percentage}}</h2>
+<h2> {{student.fee |currency :'INR' }}</h2>
+<h2> {{student.fee |currency :'INR' :'code' }}</h2>
+<h2> {{student.startDate}}</h2>
+<h2> {{student.startDate | date}}</h2>
+<h2> {{student.startDate | date : 'shortDate'}}</h2>
+<h2> {{student.percentage}}</h2>
+<h2> {{student.percentage | number}}</h2>
+<h2> {{student.percentage | number : '3.1-2'}}</h2>
+number : minNoOfDigitsbeforedecimalPt.MinNumOfDigitsAfter-MaxNumberOfDigitsAfter
 
 <input type="text" (click)="show($event)">
 <hr>
@@ -20,3 +42,4 @@ status : {{prodInfo}} <br>
     <button class="btn btn-success" (click)="processWish(wish)">When will it come true</button>
     <h2 class="text-success"> {{wishMessage}}</h2>
 </div>
+<hr>

@@ -1,0 +1,10 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background: lightcyan;
+}
+
+.txtcol {
+  color: blueviolet;
+  border: blueviolet 10px dashed;
+}

@@ -1,0 +1,20 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background: cadetblue;
+}
+
+.txtcol {
+  color: cornsilk;
+  border: darkblue 10px dashed;
+}
+
+.class1 {
+  border: dashed deeppink 10px;
+}
+.class2 {
+  color: blue;
+  text-align: center;
+  background-color: coral;
+  padding: 30px;
+}

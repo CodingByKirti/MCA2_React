@@ -1,0 +1,51 @@
+<p class="box">class-style works!</p>
+<hr>
+<p class="box" [class.txtcol]="isApply">class-style works!</p>
+
+<p [ngClass]=" 'class1 class2 ' ">N g class works!</p>
+<p [ngClass]="customObj">N g class works!</p>
+
+<h1 [ngStyle]="{'color':'red', 'border':'dotted 15px blue'}">N g class works!</h1>
+<h1 [ngStyle]="customObj1">N g class works!</h1>
+
+
+<div *ngIf="uname==='admin1'">
+    Welcome Admin
+</div>
+
+<div *ngIf="uname==='admin1'; else elsepart ">
+    Welcome Admin
+</div>
+<div *ngIf="uname==='admin'; then ifpart else elsepart ">
+
+</div>
+
+
+<ng-template #ifpart>
+    Welcome USER
+</ng-template>
+<ng-template #elsepart>
+    Welcome Guest
+</ng-template>
+
+
+<hr>
+<div [ngSwitch]="favColor">
+    <div *ngSwitchDefault>
+        no color is selected
+    </div>
+    <div *ngSwitchCase=" 'red' ">
+        your fav color is RED
+    </div>
+    <div *ngSwitchCase=" 'green' ">
+        your fav color is GREEN
+    </div>
+    <div *ngSwitchCase=" 'yellow' ">
+        your fav color is YELLOW
+    </div>
+</div>
+
+
+<div *ngFor="let clr of colors ; index as i; last as l; first as f">
+    {{f}} {{i+1}}=={{clr}} ==={{l}}
+</div>

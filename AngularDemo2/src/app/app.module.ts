@@ -6,6 +6,10 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MainareaComponent } from './mainarea/mainarea.component';
 import { EventBindComponent } from './event-bind/event-bind.component';
+import { TempComponent } from './temp/temp.component';
+import { ClassStyleComponent } from './class-style/class-style.component';
+import { FormsModule } from '@angular/forms';
+import { MyCustomPipe } from './ExtraPipes/MyCustomPipe';
 
 @NgModule({
   declarations: [
@@ -13,10 +17,14 @@ import { EventBindComponent } from './event-bind/event-bind.component';
     HeaderComponent,
     FooterComponent,
     MainareaComponent,
-    EventBindComponent
+    EventBindComponent,
+    TempComponent,
+    ClassStyleComponent,
+    MyCustomPipe
   ],
   imports: [
-    BrowserModule
+  BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
