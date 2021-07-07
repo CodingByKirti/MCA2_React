@@ -10,6 +10,8 @@ import { TempComponent } from './temp/temp.component';
 import { ClassStyleComponent } from './class-style/class-style.component';
 import { FormsModule } from '@angular/forms';
 import { MyCustomPipe } from './ExtraPipes/MyCustomPipe';
+import { ParentIoComponent } from './parent-io/parent-io.component';
+import { ChildIoComponent } from './parent-io/child-io/child-io.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { MyCustomPipe } from './ExtraPipes/MyCustomPipe';
     EventBindComponent,
     TempComponent,
     ClassStyleComponent,
-    MyCustomPipe
+    MyCustomPipe,
+    ParentIoComponent,
+    ChildIoComponent
   ],
   imports: [
   BrowserModule,
