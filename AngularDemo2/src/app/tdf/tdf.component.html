@@ -1,0 +1,17 @@
+<div class="row">
+
+    <div class="col-md-6 offset-md-3">
+        <form>
+            <div class="form-group">
+                <label for="namebox">Enter Name</label>
+                <input type="text" #namebox="ngModel" name="namebox" ngModel class="form-control"
+                    (click)="showValue(namebox)" autocomplete="off" required>
+            </div>
+            <div class="form-group">
+                <label for="passbox">Enter Password</label>
+                <input type="text" #passbox="ngModel" name="passbox" ngModel class="form-control">
+            </div>
+            <button class="btn btn-success">Submit</button>
+        </form>
+    </div>
+</div>

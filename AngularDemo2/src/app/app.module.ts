@@ -12,6 +12,8 @@ import { FormsModule } from '@angular/forms';
 import { MyCustomPipe } from './ExtraPipes/MyCustomPipe';
 import { ParentIoComponent } from './parent-io/parent-io.component';
 import { ChildIoComponent } from './parent-io/child-io/child-io.component';
+import { TDFComponent } from './tdf/tdf.component';
+import { TaskProgComponent } from './task-prog/task-prog.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { ChildIoComponent } from './parent-io/child-io/child-io.component';
     ClassStyleComponent,
     MyCustomPipe,
     ParentIoComponent,
-    ChildIoComponent
+    ChildIoComponent,
+    TDFComponent,
+    TaskProgComponent
   ],
   imports: [
   BrowserModule,
