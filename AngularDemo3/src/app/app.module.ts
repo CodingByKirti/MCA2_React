@@ -6,12 +6,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TdFormComponent } from './td-form/td-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RFormComponent } from './r-form/r-form.component';
+import { ChildcompComponent } from './childcomp/childcomp.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TdFormComponent,
-    RFormComponent
+    RFormComponent,
+    ChildcompComponent
   ],
   imports: [
     BrowserModule,
