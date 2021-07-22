@@ -1,7 +1,7 @@
 const express = require("express"); // for accessing express
 const app = express(); // express is created... app
 // GET  POST PUT DELETE
-// read create update delete  // CRUD Operations
+// read create update delete  // CRUD Operations use as per requirements
 
 app.get("/", (req, res) => {
   //res.send("Hello from server...");
