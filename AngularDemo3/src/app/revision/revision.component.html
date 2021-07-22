@@ -1,0 +1,78 @@
+<p>revision works!</p>
+{{name}}
+
+<!-- Data binding
+Comp -- view
+.ts --- .html
+variable ====> html
+variable <== html
+    comp (.ts) ===> .html view
+1. one way {{}}  interpolation 
+ 2.  property binding -->
+[ ] =""
+
+<input type="text" name="" id="" [value]="txt" #mytxt> // string .. boolean
+<hr>
+<input type="text" name="" id="" bind-value="txt" (click)="show($event)"> // string .. boolean
+
+<!-- view ===> comp  event handling-->
+(event) ="handler()"
+<button (click)="disp(mytxt)">Click here</button>
+<div [ngClass]=" 'myclass myclass1' ">
+    {{message}}
+</div>
+<div [ngClass]="customClass">
+    {{message}}
+</div>
+<div [ngStyle]="{'background':'red'}">
+    {{message}}
+</div>
+
+<!-- two way binding [(ngModel)] -->
+
+<input type="text" [(ngModel)]="email">
+<p>{{email | uppercase | change }}</p>
+
+
+<!-- Pipe -transform our output in template  -->
+
+<!-- structural directives -->
+DOM modification ...change
+
+*ngIf *ngSwtich *ngFor
+
+<div *ngIf="email==='kirti'; then ifpart else elsedata">
+
+</div>
+
+<ng-template #elsedata>
+    hello everyone
+</ng-template>
+<ng-template #ifpart>
+    hello kirti
+</ng-template>
+
+<div [ngSwitch]="fruit">
+    <div *ngSwitchCase=" 'apple' "> fruit selected is apple</div>
+    <div *ngSwitchCase=" 'orange' "> fruit selected is orange</div>
+    <div *ngSwitchDefault> fruit selected is orange</div>
+</div>
+<hr>
+<hr>
+<div *ngFor="let c of colors; index as i; odd as o">
+    {{i+1}} {{c}} {{o}}
+</div>
+<form>
+    <div class="form-group">
+        <label for="fname">Enter Firstname </label>
+        <input type="text" name="fname" id="fname" ngModel #fname="ngModel" class="form-control"
+            (click)="showFname(fname)" required>
+        <div class="alert alert-danger" *ngIf=!fname.valid && fname.touched>Plz fill in the details</div>
+
+        <input type="text">
+        <input type="submit">
+    </div>
+</form>
+
+<hr>
+<hr>

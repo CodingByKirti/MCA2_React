@@ -1,0 +1,7 @@
+<p>child-comp1 works!</p>
+<button (click)="show()">Child Comp1 Click</button>
+<button (click)="getAll()">Display All Students</button>
+<ng-container *ngFor="let s of stdList">
+    {{s.roll}} {{s.name}} {{s.stream}}
+    <hr>
+</ng-container>
