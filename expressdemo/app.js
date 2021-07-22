@@ -3,7 +3,6 @@ const app = express(); // express is created... app
 // GET  POST PUT DELETE
 // read create update delete  // CRUD Operations
 
-app.use("middleware")
 app.get("/", (req, res) => {
   //res.send("Hello from server...");
   //   res.send({
