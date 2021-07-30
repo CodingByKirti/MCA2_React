@@ -1,5 +1,5 @@
 {
-  "name": "expressdemo",
+  "name": "mongonode",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,9 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cookie": "^0.4.0",
-    "cookie-parser": "^1.4.5",
     "express": "^4.17.1",
-    "parser": "^0.1.4"
+    "mongoose": "^5.13.4"
   }
 }

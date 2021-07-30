@@ -36,9 +36,9 @@ function App() {
 
   return (
     <div>
-      <button onClick={() => dispatch(decNum())}>-</button>
-      <input type="text" value={state} size="1" />
-      <button onClick={() => dispatch(incNum())}>+</button>
+      {/* <button onClick={() => dispatch(decNum())}>-</button> */}
+      {/* <input type="text" value={state} size="1" /> */}
+      {/* <button onClick={() => dispatch(incNum())}>+</button> */}
       {/* <UseIsomorphicFetch /> */}
       {/* <UseEffectHook /> */}
       {/* <LCMethods /> */}
@@ -50,7 +50,7 @@ function App() {
       {/* <UncontrolledRefHook /> */}
       {/* <UnControlledForm /> */}
       {/* <SecondForm /> */}
-      {/* <FormsDemo /> */}
+      <FormsDemo />
       {/* <BSDemo /> */}
       {/* <BootstrapTest /> */}
       {/* <Parent /> */}
