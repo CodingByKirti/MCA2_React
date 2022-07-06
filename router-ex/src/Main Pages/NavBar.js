@@ -5,6 +5,7 @@ export const NavBar = () => {
     <div>
       <ul>
         <li>
+          {/* <a href="/home">Home </a> */}
           <NavLink to="/">Home</NavLink>
         </li>
         <li>

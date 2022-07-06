@@ -13,8 +13,7 @@ const app = express();
 const mongoose = require("mongoose");
 const Blog = require("./models/blog");
 
-const uri =
-  "mongodb+srv://unode:pnode@cluster0.dvgot.mongodb.net/OurBlogs?retryWrites=true&w=majority";
+const uri = "mongodb+srv://unode:pnode@cluster0.dvgot.mongodb.net/OurBlogs?retryWrites=true&w=majority";
 
 //   mongoose.connect(url).then( /*  what is to be done after suuccessful connection*/).catch(errr)
 mongoose
@@ -49,7 +48,7 @@ app.get("/addblog", (req, res) => {
 });
 
 app.get("/showall", (req, res) => {
-  Blog.find() // no need to create a new blog, simply use find() directly
+  Blog.find()                             // no need to create a new blog, simply use find() directly
     .then((result) => {
       res.send(result);
     })
@@ -58,7 +57,7 @@ app.get("/showall", (req, res) => {
     });
 });
 app.get("/singleblog", (req, res) => {
-  Blog.findById("61026eed99cf83093425810d") // no need to create a new blog, simply use find() directly
+  Blog.findById("61026eed99cf83093425810d")             // no need to create a new blog, simply use find() directly
     .then((result) => {
       res.send(result);
     })
@@ -76,7 +75,7 @@ app.get("/deleteblog", (req, res) => {
     });
 });
 app.get("/findbytitle", (req, res) => {
-  Blog.find({ title: "New Blog 1" }) // no need to create a new blog, simply use find() directly
+  Blog.find({ title: "New Blog 1" })            // no need to create a new blog, simply use find() directly
     .then((result) => {
       res.send(result);
     })

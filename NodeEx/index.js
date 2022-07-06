@@ -1,31 +1,32 @@
 // File system  : Sync , async
-// module s:
+// modules:
 const fs = require("fs"); /// import fs from "fs"
 //  writing to a file
-// fs.writeFileSync("read.txt", "Welcome To NODE!!!");
-// // append
-// fs.appendFileSync("read.txt", "extra content");
-// // reading from file
-
+fs.writeFileSync("read.txt", "Welcome To NODE!!!");
+// append
+fs.appendFileSync("read.txt", "extra content");
+// reading from file
 const bdata = fs.readFileSync("read.txt");
-console.log(bdata.toString());
-// const data = fs.readFileSync("read.txt", "utf-8");
-// console.log(data);
+console.log(bdata.toString()); // convert to string before writing to console
+const data = fs.readFileSync("read.txt", "utf-8");
+console.log(data);
+//create a directory
+fs.mkdirSync("myfolder");
+// writing to a file under a specified folder
+fs.writeFileSync("myfolder/myfile.txt", "file created under a folder");
+// remove a file
+fs.unlinkSync("myfolder/myfile.txt");
+// remove a folder
+fs.rmdirSync("myfolder");
 
-// create a dir
-// fs.mkdirSync("myfolder");
-// fs.writeFileSync("myfolder/myfile.txt", "file created under a folder");
-// fs.unlinkSync("myfolder/myfile.txt");
-// fs.rmdirSync("myfolder");
+fs.writeFile("read.txt", "We are working now", (err) => {
+  console.log("Is error creating the file ?" + err);
+});
+fs.appendFile("read.txt", "its fun working with File system", () => {});
 
-// fs.writeFile("read.txt", "We are working now", (err) => {
-//   console.log("Is error creating the file ?" + err);
-// });
-// fs.appendFile("read.txt", "its fun working with File system", () => {});
-
-// fs.readFile("read.txt", "utf-8", (err, data) => {
-//   console.log(data);
-// });
+fs.readFile("read.txt", "utf-8", (err, data) => {
+  console.log(data);
+});
 // OS module
 
 // const os = require("os");

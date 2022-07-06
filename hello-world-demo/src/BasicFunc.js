@@ -48,7 +48,7 @@ console.log(bigBooks);
 // reduce  -- it accumulates all the return values
 const nums = [12, 34, 56, 767, 77, 44];
 
-const sum = nums.reduce((t, v) => t + v); // prevVal,CurVal
+const sum = nums.reduce((t, v) => t + v); // prevValOfAcc,CurVal
 console.log(sum);
 
 const totalPages = books.reduce((c, v) => c + v.pages, 0);

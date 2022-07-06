@@ -11,6 +11,7 @@ function App() {
       <h1>Shopping site</h1>
       <NavBar />
       <Switch>
+        {/* <Route path="/home" component={Home}></Route> */}
         <Route exact path="/" component={Home}></Route>
         <Route path="/home/:data" component={Home}></Route>
         <Route path="/about" component={AboutUs}></Route>

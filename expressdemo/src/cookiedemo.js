@@ -4,9 +4,8 @@ const app = express();
 
 // middleware ..
 app.use(cookieParser());
-
+// adding cookie
 app.get("/signin", (req, res) => {
-  //   console.log(req);
   res.cookie("session_id", "12345", { maxAge: 8000 });
   res.status(200).send("Logged In successfully");
 });

@@ -10,8 +10,8 @@ const server = http.createServer((req, res) => {
     fs.readFile(`${__dirname}/UserApi/userapi.json`, "utf-8", (err, data) => {
       // console.log(data);
       res.writeHead(200, { "content-type": "application/json" });
-   //   const objData = JSON.parse(data); // convert to JS Object
-     // res.end(objData[0].name);
+      //   const objData = JSON.parse(data); // convert to JS Object
+      // res.end(objData[0].name);
       res.end(data);
     });
   } else {
