@@ -1,3 +1,7 @@
+//  run commands from within the folder ===>
+// npm init-y
+// npm -i express
+
 const express = require("express"); // for accessing express
 const app = express(); // express is created... app
 // GET  POST PUT DELETE

@@ -22,7 +22,6 @@ const server = http.createServer((req, res) => {
 });
 
 // start your server
-// 0 -65535   , 0-1023 reserve // 1024 17000
 
 server.listen(3300, "localhost", () => {
   console.log("server listening on port no : 3300");

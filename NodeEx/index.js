@@ -3,7 +3,7 @@
 const fs = require("fs"); /// import fs from "fs"
 //  writing to a file
 fs.writeFileSync("read.txt", "Welcome To NODE!!!");
-// append
+// // append
 fs.appendFileSync("read.txt", "extra content");
 // reading from file
 const bdata = fs.readFileSync("read.txt");
@@ -27,7 +27,7 @@ fs.appendFile("read.txt", "its fun working with File system", () => {});
 fs.readFile("read.txt", "utf-8", (err, data) => {
   console.log(data);
 });
-// OS module
+// // OS module
 
 // const os = require("os");
 // console.log(os.arch());
@@ -38,7 +38,7 @@ fs.readFile("read.txt", "utf-8", (err, data) => {
 // console.log(os.hostname());
 // console.log(os.platform());
 
-// path module
+// // path module
 // const path = require("path");
 // console.log(path.dirname("D:kirtiMCA2NodeEx\read.txt"));
 // console.log(path.extname("D:kirtiMCA2NodeEx\read.txt"));
@@ -53,4 +53,6 @@ console.log(buf[0]);
 const bd = Buffer.alloc(4);
 bd.write("Hey!");
 console.log(bd);
+console.log(bd.toString());
+console.log(bd.toString());
 console.log(bd.toString());
